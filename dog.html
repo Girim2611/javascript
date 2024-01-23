@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=prompt();
+        let com=[];
+        for(let i=0;i<x.length;i++)
+        {
+            
+            for(let j=i+1;j<x.length+1;j++)
+            {
+              com.push(x.slice(i,j));
+            }
+        }
+        document.write(com);
+       
+    </script>
+</body>
+</html>

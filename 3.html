@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Enter the percentage</p>
+    <input id="perc">
+    <button type="button"onclick ="validate()">Submit</button>
+    <p id="text"></p>
+    Add your Javascript
+    <script>
+function validate(){
+    var pera=document.getElementById("perc").value;
+    var element = document.createElement('div');
+   
+    if(pera>=80&&pera<=100){
+        document.getElementById("text").innerHTML()="best";
+        document.getElementById("text").style.color = "blue";
+    }
+    if(pera>=60&&pera<=79){
+        element.style.color = 'blue';
+        element.textContent = 'best';
+        document.getElementById("text").innerHTML(document.body.appendChild(element));
+    }if(pera>=50&&pera<=59){
+        element.style.color = 'orange';
+        element.textContent = 'Better';
+        document.getElementById("text").innerHTML(document.body.appendChild(element));
+    }if(pera<=50){
+        element.style.color = 'red';
+        element.textContent = 'Not Eligible';
+        document.getElementById("text").innerHTML(document.body.appendChild(element));
+    }
+}
+    </script>
+</body>
+</html>

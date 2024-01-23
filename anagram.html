@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=prompt();
+        var y=prompt();
+        let a=x.split("");
+        let b=y.split("");
+       a.sort();
+       b.sort();
+       var c=0;
+       for(i=0;i<a.length;i++)
+       {
+        if(a[i]==b[i])
+        c++;
+       }
+       if(c==a.length)
+       document.write("Anagram");
+    else
+    document.write("not a Anagram");
+    </script>
+</body>
+</html>
